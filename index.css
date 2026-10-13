@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b0b14;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #e8e8f5;
+}
+
+.backg {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  background: linear-gradient(135deg, #14122b, #1c1740 60%, #2a1450);
+  border: 2px solid #8b5cf6;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 0 25px rgba(139, 92, 246, 0.45),
+    0 0 60px rgba(34, 211, 238, 0.15);
+}
+
+.section1 {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border-right: 4px solid transparent;
+  border-image: linear-gradient(to bottom, #22d3ee, #8b5cf6, #ec4899) 1;
+}
+
+.section1 p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #a5b4fc;
+}
+
+.section1 p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #22d3ee;
+}
+
+.section1 > div:not(.small) {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+select {
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: #1f1b3a;
+  border: 1px solid #3b3566;
+  color: #e8e8f5;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input {
+  width: 130px;
+}
+
+input:focus,
+select:focus {
+  border-color: #22d3ee;
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.ded,
+.dod {
+  width: 80px;
+  cursor: pointer;
+}
+
+option {
+  background: #1f1b3a;
+  color: #e8e8f5;
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  height: 38px;
+  width: 110px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #22d3ee, #8b5cf6, #ec4899);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 22px rgba(236, 72, 153, 0.8);
+}
+
+.section2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.result {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #22d3ee, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+}
